@@ -1,11 +1,25 @@
+# 敏感环境配置文件
+.env
+
+# 数据与输出（直接忽略整个文件夹）
 data/
-output/llm_raw_response.txt
+output/
+
+# 各种数据及压缩格式（兜底）
 *.csv
 *.xlsx
+archive.zip
+
+# Python 编译缓存
 __pycache__/
-.env
-config.py
+*.pyc
+
+# AI 工具缓存与历史
 .claude/
 .codex/
 claude_chat_history.txt
-archive.zip
+
+# 常见编辑器与系统缓存（建议补充）
+.vscode/
+.idea/
+.DS_Store
