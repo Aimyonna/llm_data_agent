@@ -1,4 +1,4 @@
-# 基于 LLM 终端智能体（Agent）的电商全链路业务环比异动与舆情全自动诊断系统
+# 基于 LLM 终端智能体（Agent）的电商全链路业务环比异动与负面评论全自动诊断系统
 
 ## 1. 项目背景与业务痛点 (Business Background)
 在跨境电商（以巴西最大零售平台 Olist 为例）的日常经营中，面对 **11.4万笔全链路星型数仓数据** 与数十万条非结构化多语种用户评论，传统数据分析链路存在严重断层：
@@ -26,3 +26,17 @@ llm_data_agent/
 │
 ├── auto_analyzer.py           # 核心 Pipeline：承载 Pandas 清洗、大模型调用及防御算子
 └── .gitignore                 # 安全铁闸：屏蔽 CSV/ZIP/Token，防止生产泄漏与 Git 大文件崩溃
+```
+---
+
+## 3. 工业级数据清洗与底池守卫 (Data Pipeline Defense)
+脏数据是算法模型的死敌，在 Pipeline 运行前，脚本强制执行了预处理黄金预检防线：
+
+DtypeWarning 强行拦截：在 pd.read_csv 阶段，针对多表联结时由于空值频繁爆发的 Pandas 混合类型冲突地雷，强制指定 keep_default_na=False 与 low_memory=False 规避类型混淆。
+
+底池真空过滤：前置剔除 order_id 或 product_id 为空的残缺异常行，通过 how='left' 联结多表，守住流失率与大盘变动的分母底池，防止数据膨胀与指标失真。
+
+文本脱水去噪：针对捞出的低分负面评论，通过正则过滤大段纯符号或留空文本，为后续喂给 LLM 进行高效 Token 脱水。
+
+---
+
