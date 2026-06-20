@@ -8,3 +8,4 @@ config.py
 .claude/
 .codex/
 claude_chat_history.txt
+archive.zip
