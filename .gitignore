@@ -1,0 +1,10 @@
+data/
+output/llm_raw_response.txt
+*.csv
+*.xlsx
+__pycache__/
+.env
+config.py
+.claude/
+.codex/
+claude_chat_history.txt

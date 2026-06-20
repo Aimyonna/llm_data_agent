@@ -1,0 +1,246 @@
+{
+  "step2": {
+    "worst_month": "2017-12",
+    "worst_month_start": "2017-12-01",
+    "worst_month_end": "2017-12-31",
+    "worst_pct": -26.63,
+    "worst_abs": -271041.68,
+    "worst_month_sales": 746717.15,
+    "worst_month_prev_sales": 1017758.83
+  },
+  "step2_monthly_sales": [
+    {
+      "year_month": "2016-09",
+      "total_sales": 267.36,
+      "prev_sales": null,
+      "mom_change_abs": null,
+      "mom_change_pct": null,
+      "_valid": false
+    },
+    {
+      "year_month": "2016-10",
+      "total_sales": 49634.35,
+      "prev_sales": 267.36,
+      "mom_change_abs": 49366.99,
+      "mom_change_pct": 18464.613255535605,
+      "_valid": true
+    },
+    {
+      "year_month": "2016-12",
+      "total_sales": 10.9,
+      "prev_sales": 49634.35,
+      "mom_change_abs": -49623.45,
+      "mom_change_pct": -99.9780394021479,
+      "_valid": false
+    },
+    {
+      "year_month": "2017-01",
+      "total_sales": 121087.9,
+      "prev_sales": 10.9,
+      "mom_change_abs": 121077.0,
+      "mom_change_pct": 1110798.1651376146,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-02",
+      "total_sales": 248563.02,
+      "prev_sales": 121087.9,
+      "mom_change_abs": 127475.12,
+      "mom_change_pct": 105.27486231076763,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-03",
+      "total_sales": 376010.7,
+      "prev_sales": 248563.02,
+      "mom_change_abs": 127447.68000000002,
+      "mom_change_pct": 51.27378964095304,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-04",
+      "total_sales": 360738.17,
+      "prev_sales": 376010.7,
+      "mom_change_abs": -15272.530000000028,
+      "mom_change_pct": -4.061727498712145,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-05",
+      "total_sales": 509639.63,
+      "prev_sales": 360738.17,
+      "mom_change_abs": 148901.46000000002,
+      "mom_change_pct": 41.27687957168492,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-06",
+      "total_sales": 436550.89,
+      "prev_sales": 509639.63,
+      "mom_change_abs": -73088.73999999999,
+      "mom_change_pct": -14.341259136382309,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-07",
+      "total_sales": 501299.7,
+      "prev_sales": 436550.89,
+      "mom_change_abs": 64748.81,
+      "mom_change_pct": 14.831904248322573,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-08",
+      "total_sales": 578588.99,
+      "prev_sales": 501299.7,
+      "mom_change_abs": 77289.28999999998,
+      "mom_change_pct": 15.417781020016562,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-09",
+      "total_sales": 626752.17,
+      "prev_sales": 578588.99,
+      "mom_change_abs": 48163.18000000005,
+      "mom_change_pct": 8.324247580307405,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-10",
+      "total_sales": 667869.15,
+      "prev_sales": 626752.17,
+      "mom_change_abs": 41116.97999999998,
+      "mom_change_pct": 6.560325112236944,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-11",
+      "total_sales": 1017758.83,
+      "prev_sales": 667869.15,
+      "mom_change_abs": 349889.67999999993,
+      "mom_change_pct": 52.38895672902393,
+      "_valid": true
+    },
+    {
+      "year_month": "2017-12",
+      "total_sales": 746717.15,
+      "prev_sales": 1017758.83,
+      "mom_change_abs": -271041.67999999993,
+      "mom_change_pct": -26.631228539672797,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-01",
+      "total_sales": 955658.74,
+      "prev_sales": 746717.15,
+      "mom_change_abs": 208941.58999999997,
+      "mom_change_pct": 27.981356796211248,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-02",
+      "total_sales": 853591.21,
+      "prev_sales": 955658.74,
+      "mom_change_abs": -102067.53000000003,
+      "mom_change_pct": -10.68033239564157,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-03",
+      "total_sales": 986867.05,
+      "prev_sales": 853591.21,
+      "mom_change_abs": 133275.84000000008,
+      "mom_change_pct": 15.613544099171323,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-04",
+      "total_sales": 998893.07,
+      "prev_sales": 986867.05,
+      "mom_change_abs": 12026.019999999902,
+      "mom_change_pct": 1.2186058902260342,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-05",
+      "total_sales": 997066.66,
+      "prev_sales": 998893.07,
+      "mom_change_abs": -1826.4099999999162,
+      "mom_change_pct": -0.1828433948390408,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-06",
+      "total_sales": 865956.24,
+      "prev_sales": 997066.66,
+      "mom_change_abs": -131110.42000000004,
+      "mom_change_pct": -13.1496142895802,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-07",
+      "total_sales": 897496.14,
+      "prev_sales": 865956.24,
+      "mom_change_abs": 31539.900000000023,
+      "mom_change_pct": 3.642204830119363,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-08",
+      "total_sales": 854760.45,
+      "prev_sales": 897496.14,
+      "mom_change_abs": -42735.69000000006,
+      "mom_change_pct": -4.761657247907502,
+      "_valid": true
+    },
+    {
+      "year_month": "2018-09",
+      "total_sales": 145.0,
+      "prev_sales": 854760.45,
+      "mom_change_abs": -854615.45,
+      "mom_change_pct": -99.9830361828276,
+      "_valid": false
+    },
+    {
+      "year_month": "2018-10",
+      "total_sales": 0.0,
+      "prev_sales": 145.0,
+      "mom_change_abs": -145.0,
+      "mom_change_pct": -100.0,
+      "_valid": false
+    }
+  ],
+  "step3": {
+    "llm_success": true,
+    "negative_count": 854,
+    "sampled_count": 20,
+    "top3_pain_points": [
+      {
+        "rank": 1,
+        "title": "物流严重延误与包裹丢失",
+        "dimension": "场",
+        "description": "近半数差评反映未收到货或配送极慢，直接导致客户不满、取消订单和退款，严重削弱平台信任，复购率骤降。",
+        "severity": "高",
+        "estimated_impact": "45%"
+      },
+      {
+        "rank": 2,
+        "title": "商品缺件与少发频发",
+        "dimension": "货",
+        "description": "订单拆分或漏发导致顾客只收到部分商品，已付款却要反复追问补发，引发退款纠纷和大量负面口碑，拉低转化率。",
+        "severity": "高",
+        "estimated_impact": "30%"
+      },
+      {
+        "rank": 3,
+        "title": "产品质量低劣与破损",
+        "dimension": "货",
+        "description": "收到即破损、脱线、包装极差等质量问题，造成高退货率和差评传播，直接影响商品评分和推荐位，销量随之滑坡。",
+        "severity": "中",
+        "estimated_impact": "20%"
+      }
+    ],
+    "executive_summary": "当月销量暴跌的核心原因在于物流履约崩溃与货端缺陷齐发。45%的差评指向未收到货或极端延迟，消费者信任断裂，大量退款令平台有效订单量锐减；同时，30%的差评揭露多发漏发，客户需自行追讨补寄，体验极差，直接劝退潜在买家；另有20%差评反映商品质量差、破损、包装简陋，加剧负面口碑传播。建议立即切换可靠物流服务商、建立发货扫描核验流程，并对热销品强化来货质检。短期需推出补偿方案挽回老客，长期否则差评雪球将导致流量权重下降，进一步恶化销售。"
+  },
+  "generated_at": "2026-06-20T16:01:08.313344"
+}
