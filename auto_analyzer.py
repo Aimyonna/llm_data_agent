@@ -38,6 +38,36 @@ from typing import Dict, List, Optional, Tuple, Any
 import numpy as np
 import pandas as pd
 
+
+# ---------------------------------------------------------------------------
+# 简易 .env 加载器 (零依赖, 不引入 python-dotenv)
+# ---------------------------------------------------------------------------
+
+def load_dotenv(dotenv_path: Optional[Path] = None) -> None:
+    """
+    从 .env 文件读取 KEY=VALUE 行并注入 os.environ。
+    规则: 跳过空行与 # 开头的注释; 忽略未包含 = 的行;
+          值两边引号自动剥离; 不覆盖已有的同名环境变量。
+    """
+    if dotenv_path is None:
+        dotenv_path = Path(__file__).resolve().parent / ".env"
+    if not dotenv_path.exists():
+        return
+    with open(dotenv_path, "r", encoding="utf-8") as fh:
+        for raw in fh:
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, val = line.partition("=")
+            key = key.strip()
+            val = val.strip()
+            # 剥离引号 (单引或双引)
+            if len(val) >= 2 and val[0] == val[-1] and val[0] in ('"', "'"):
+                val = val[1:-1]
+            if key and key not in os.environ:
+                os.environ[key] = val
+
+
 # ---------------------------------------------------------------------------
 # 全局配置
 # ---------------------------------------------------------------------------
@@ -669,6 +699,7 @@ def call_llm(system_prompt: str, user_prompt: str) -> Optional[str]:
 
         if not api_key:
             print("  ⚠ 未检测到 ANTHROPIC_AUTH_TOKEN 环境变量。")
+            print("     请在项目根目录创建 .env 文件并填写 API Key, 参考 .env.example")
             return None
 
         client = anthropic.Anthropic(api_key=api_key, base_url=base_url)
@@ -932,6 +963,7 @@ def step9_generate_report(quant: Dict[str, Any], hyp: Dict[str, Any]) -> str:
 # ============================================================================
 
 def main() -> int:
+    load_dotenv()  # 优先从 .env 文件加载 API Key 等配置
     print("\n" + "█" * 78)
     print("█  Olist 大盘 GMV 环比异动归因分析 —— 量化为主, LLM 为辅")
     print("█  启动时间:", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
